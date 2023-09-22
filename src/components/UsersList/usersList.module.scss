@@ -1,0 +1,16 @@
+.usersListContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6.8rem;
+    padding: 2rem 0;
+}
+
+.noUserFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:700;
+    width: 100vw;
+    height: 50vh;
+}

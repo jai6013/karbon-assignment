@@ -1,0 +1,25 @@
+.userDescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.nameContainer{
+   border-bottom: 2px solid black;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   font-weight: 700;
+}
+
+.nameInfoBadge{
+    justify-content: flex-start !important;
+    gap: .2rem;
+}
+
+.listContainer{
+    padding: 2rem;
+    & div{
+        padding-bottom: .2rem;
+    }
+}

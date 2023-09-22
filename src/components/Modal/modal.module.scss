@@ -1,0 +1,11 @@
+@import "../../sass/variable.scss";
+
+.modal {
+  border-radius: 10px;
+  height: 70vh;
+  width: 70vw;
+}
+
+::backdrop {
+  background-color: $black-70;
+}

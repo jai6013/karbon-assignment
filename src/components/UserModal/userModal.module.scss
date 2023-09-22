@@ -1,0 +1,172 @@
+@import "../../sass/variable.scss";
+
+.modalParentContainer {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.customInput {
+  outline: none;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  font-size: 18px;
+  border-color: rgba(195, 193, 193, 0.5);
+}
+
+.customInput:focus {
+  border-color: rgb(0, 0, 0);
+}
+
+.customInput:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.red {
+  color: red;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formInputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: start;
+  width: 80%;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.genderContainer {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.genderContainer > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.formFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+  bottom: 24px;
+  right: 24px;
+  margin: auto;
+  margin-top: 24px;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .modalParentContainer {
+    padding: 0;
+    overflow: auto;
+  }
+
+  .formRow {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .formFooter {
+    position: relative;
+    justify-content: end;
+  }
+
+  .formInputGroup {
+    width: 80%;
+  }
+
+  .customInput {
+    width: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .modalParentContainer {
+    padding: 0;
+    overflow: auto;
+  }
+
+  .formRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .formFooter {
+    position: absolute;
+    justify-content: end;
+  }
+
+  .formInputGroup {
+    width: 40%;
+  }
+
+  .customInput {
+    width: auto;
+  }
+}
+
+.orangeBtn, .blueBtn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  color: white;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.orangeBtn:hover, .blueBtn:hover {
+  transform: translate(-2px, -2px) scale(1.05);
+}
+
+.orangeBtn {
+  background-color: #f64f2a;
+}
+
+.blueBtn {
+  background-color: #1677ff;
+}
+
+.orangeBtn:hover {
+  box-shadow: 1px 3px 4px 0px rgba(93, 30, 16, 0.673);
+}
+
+.blueBtn:hover {
+  box-shadow: 1px 3px 4px 0px rgba(8, 45, 97, 0.626);
+}

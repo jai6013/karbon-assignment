@@ -1,0 +1,11 @@
+.userActionsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top: 2px solid black;
+}
+
+.deleteBtn{
+    background-color: red !important;
+}

@@ -1,0 +1,25 @@
+@import '../../sass/variable.scss';
+
+.userCard{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 80%;
+    border-radius: .8rem;
+}
+
+button{
+    padding: .5rem 1rem;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .userCard{
+        width: 40%;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .userCard{
+        width: 28%;
+    }
+}

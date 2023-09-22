@@ -1,0 +1,14 @@
+@import '../../sass/variable.scss';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16vh;
+    padding: 0 2.4rem;
+    background-color: $Eerie-Black;
+}
+
+.heading{
+    color: $White;
+}

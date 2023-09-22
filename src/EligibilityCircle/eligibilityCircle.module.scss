@@ -1,0 +1,19 @@
+@import '../sass/variable.scss';
+
+.circle{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+}
+
+.green{
+    background-color:$green;
+}
+
+.purple{
+    background-color:$purple;
+}
+
+.orange{
+    background-color: $orange;
+}
