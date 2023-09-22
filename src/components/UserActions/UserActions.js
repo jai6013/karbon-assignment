@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import _map from "lodash/map";
 
 import Button from "../Button.js/Button";
@@ -7,7 +7,7 @@ import { USER_ACTIONS } from "./userActions.config";
 import styles from "./userActions.module.scss";
 
 const UserActions = ({ handleViewUser, handleEditUser, handleDeleteUser }) => {
-  const renderActionItem = useCallback((action) => {
+  const renderActionItem = (action) => {
     const { name, className } = action;
     let onClickFn = handleViewUser;
     if (action.name === "DELETE") {
@@ -22,7 +22,7 @@ const UserActions = ({ handleViewUser, handleEditUser, handleDeleteUser }) => {
         buttonClassName={className}
       />
     );
-  }, []);
+  };
 
   return (
     <div className={styles.userActionsContainer}>

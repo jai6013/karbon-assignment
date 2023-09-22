@@ -18,7 +18,7 @@ const UserCard = ({
   const handleViewUserData = useCallback(() => handleViewUser(userInfo?.id),[])
 
   return (
-    <div className={styles.userCard}>
+    <div key={userInfo?.id} className={styles.userCard}>
       <UserDescription userData={formattedData} userInfo={userInfo} />
       <UserActions
         handleViewUser={handleViewUserData}
